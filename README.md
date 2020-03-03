@@ -11,7 +11,7 @@ There are a few options.
 
 ```js
 javascript: (function () {
-	Game.LoadMod('TODO: SLAM MOD IN HERE');
+	Game.LoadMod("https://emeraldsemerald.github.io/HornetWidget/HornetWidget.js");
 }());
 ```
 
@@ -30,7 +30,7 @@ If you instead use Tampermonkey or Greasemonkey, you should be able to use this 
 var code = "(" + (function() {
     var checkReady = setInterval(function() {
         if (typeof Game.ready !== 'undefined' && Game.ready) {
-            Game.LoadMod('TODO: SLAM MOD IN HERE');
+            Game.LoadMod("https://emeraldsemerald.github.io/HornetWidget/HornetWidget.js");
             clearInterval(checkReady);
         }
     }, 1000);
