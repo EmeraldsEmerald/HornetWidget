@@ -1,5 +1,7 @@
 //Greetings! This is awful code that I just spliced together in 5 minutes for a simple utility. Feel free to improve it.
 
+Game.Win('Third-party');
+
 Game.ObjectsById[2].minigame.toolsById[0] ={
 				name:'Garden information',
 				icon:3,
