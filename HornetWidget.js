@@ -46,7 +46,7 @@ Game.ObjectsById[2].minigame.toolsById[0] ={
 						if (effStr=='') effStr='<div style="font-size:10px;margin-left:64px;"><b>None.</b></div>';
 						str+='<div>Combined effects of all your plants :</div>'+effStr;
 					}
-					if (Game.ObjectsById[2].minigame.convertTimes > 0) str+='<div>You have sacrificed your garden to the hornets <span style="color:white">' + Beautify(Game.ObjectsById[2].minigame.convertTimes) + '</span> times.</div>'
+					if (Game.ObjectsById[2].minigame.convertTimes > 0) (Game.ObjectsById[2].minigame.convertTimes ? str+='<div>You have sacrificed your garden to the hornets <span style="color:white">' + Beautify(Game.ObjectsById[2].minigame.convertTimes) + '</span> time.</div>' : str+='<div>You have sacrificed your garden to the hornets <span style="color:white">' + Beautify(Game.ObjectsById[2].minigame.convertTimes) + '</span> times.</div>' )
 					str+='<div class="line"></div>';
 					str+='<img src="img/gardenTip.png" style="float:right;margin:0px 0px 8px 8px;"/><small style="line-height:100%;">&bull; You can cross-breed plants by planting them close to each other; new plants will grow in the empty tiles next to them.<br>&bull; Unlock new seeds by harvesting mature plants.<br>&bull; When you ascend, your garden plants are reset, but you keep all the seeds you\'ve unlocked.<br>&bull; Your garden has no effect and does not grow while the game is closed.</small>';
 					return str;
