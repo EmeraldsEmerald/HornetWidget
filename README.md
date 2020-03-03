@@ -9,7 +9,7 @@ There are a few options.
 2. Paste it in the URL section.
 3. Whenever you want to load the mod, just click the bookmark!
 
-```
+```js
 javascript: (function () {
 	Game.LoadMod('TODO: SLAM MOD IN HERE');
 }());
@@ -17,7 +17,8 @@ javascript: (function () {
 
 ## Userscript
 If you instead use Tampermonkey or Greasemonkey, you should be able to use this script instead:
-```
+
+```js
 // ==UserScript==
 // @name Hornet Widget
 // @namespace HornetWidget
