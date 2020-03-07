@@ -34,4 +34,4 @@ function injectCode(
     return newFunc
 }
 
-Game.ObjectsById[2].minigame.toolsById[0].descFunc = injectCode(Game.ObjectsById[2].minigame.toolsById[0].descFunc, `str+='<div class="line"></div>';`, `if (Game.ObjectsById[2].minigame.convertTimes > 0)  str+='<div>You have sacrificed your garden to the hornets <span style="color:white">' + Beautify(Game.ObjectsById[2].minigame.convertTimes) + \`</span> time\$\{Game.ObjectsById[2].minigame.convertTimes == 1 ? "s" : "" \}.</div>\` ;`, "before");
+Game.ObjectsById[2].minigame.toolsById[0].descFunc = injectCode(Game.ObjectsById[2].minigame.toolsById[0].descFunc, `str+='<div class="line"></div>';`, `if (Game.ObjectsById[2].minigame.convertTimes > 0)  str+='<div>You have sacrificed your garden to the hornets <span style="color:white">' + Beautify(Game.ObjectsById[2].minigame.convertTimes) + \`</span> time\$\{Game.ObjectsById[2].minigame.convertTimes == 1 ? "" : "s" \}.</div>\` ;`, "before");
